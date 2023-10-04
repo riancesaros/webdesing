@@ -1,0 +1,120 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "nav nav nav"
+                         "section section section"
+                         "footer footer footer";
+
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    height: 100vh;
+    font-family: sans-serif;  
+}
+
+header{
+    grid-area: header;
+    background-color: #756c6c;;
+    border-radius: 10px;
+}
+
+.i1{
+    grid-area: header;
+    height: 100px;
+    align-self: center;
+    padding: 5px;
+}
+
+.iconlink{
+    grid-area: header;
+    justify-self: end;
+    align-self: end;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.i2{
+    height: 40px;
+}
+
+h1{
+    grid-area: header;
+    font-size: 35px;
+    align-self: center;
+    justify-self: left;
+    padding-left: 140px;
+}
+
+
+nav {
+    grid-area: nav;
+    background-color: #756c6c;;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*modificar apartir daq*/
+
+
+.empresa{
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #696969;
+}
+
+
+.imgempresa{
+    display: flex;
+    justify-content: center;
+}
+
+.txtsobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+   
+        border-radius: 10px;
+        background-color: #756c6c;;
+        border: none;
+        color: white;
+    }
+
+section {
+    grid-area: section;
+    background-color: #f9f9f9;
+    padding: 10px;
+    padding-bottom: 90px;
+    border-radius: 10px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #ccc;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #696969;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
